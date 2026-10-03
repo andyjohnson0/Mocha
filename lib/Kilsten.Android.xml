@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kilsten.Android</name>
+    </assembly>
+    <members>
+        <member name="T:Kilsten.Android.ActivityExt">
+            <summary>
+            Extension methods for <see cref="T:Android.App.Activity"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.ActivityExt.GetContentView(Android.App.Activity)">
+            <summary>
+            Gets the activity's content view - the view set by <c>SetContentView()</c>.
+            </summary>
+            <param name="self">Activity</param>
+            <returns>The content view, or null if there is none</returns>
+        </member>
+        <member name="M:Kilsten.Android.ActivityExt.EnterImmersiveMode(AndroidX.AppCompat.App.AppCompatActivity)">
+            <summary>
+            Enters immersive mode, hiding the system bars until the user swipes from the edge of the screen.
+            </summary>
+            <param name="self">Activity</param>
+        </member>
+        <member name="M:Kilsten.Android.ActivityExt.GetDisplay(AndroidX.AppCompat.App.AppCompatActivity)">
+            <summary>
+            Gets the display that the activity is shown on.
+            </summary>
+            <param name="self">Activity</param>
+            <returns>The display, or null if the activity is not associated with a display</returns>
+        </member>
+        <member name="M:Kilsten.Android.ActivityExt.GetDisplaySize(AndroidX.AppCompat.App.AppCompatActivity)">
+            <summary>
+            Gets the size of the display that the activity is shown on.
+            </summary>
+            <param name="self">Activity</param>
+            <returns>Display size, in pixels</returns>
+            <exception cref="T:System.InvalidOperationException">The activity is not associated with a display.</exception>
+        </member>
+        <member name="M:Kilsten.Android.ActivityExt.IsTablet(AndroidX.AppCompat.App.AppCompatActivity)">
+            <summary>
+            Determines whether the app is probably running on a tablet, taken to be a device with a screen diagonal of
+            6.5 inches or more.
+            </summary>
+            <param name="self">Activity</param>
+            <returns>True if the device is probably a tablet, otherwise false</returns>
+        </member>
+        <member name="T:Kilsten.Android.BitmapExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Graphics.Bitmap"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.BitmapExt.Resize(Android.Graphics.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            Creates a copy of the bitmap resized to fit within a maximum width and height, preserving its aspect ratio.
+            </summary>
+            <param name="self">Bitmap</param>
+            <param name="maxWidthPx">Maximum width, in pixels</param>
+            <param name="maxHeightPx">Maximum height, in pixels</param>
+            <returns>Resized bitmap</returns>
+        </member>
+        <member name="T:Kilsten.Android.ArrowHeadStyle">
+            <summary>
+            Arrowhead styles for <see cref="M:Kilsten.Android.CanvasExt.DrawArrow(Android.Graphics.Canvas,Android.Graphics.PointF,Android.Graphics.PointF,System.Single,System.Single,Kilsten.Android.ArrowHeadStyle,Android.Graphics.Paint)"/>.
+            </summary>
+        </member>
+        <member name="F:Kilsten.Android.ArrowHeadStyle.None">
+            <summary>No arrowhead - just a line</summary>
+        </member>
+        <member name="F:Kilsten.Android.ArrowHeadStyle.Open">
+            <summary>Open - a V shape</summary>
+        </member>
+        <member name="F:Kilsten.Android.ArrowHeadStyle.Filled">
+            <summary>Filled triangle</summary>
+        </member>
+        <member name="F:Kilsten.Android.ArrowHeadStyle.Hollow">
+            <summary>Unfilled triangle</summary>
+        </member>
+        <member name="T:Kilsten.Android.CanvasExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Graphics.Canvas"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.CanvasExt.DrawArrow(Android.Graphics.Canvas,Android.Graphics.PointF,Android.Graphics.PointF,System.Single,System.Single,Kilsten.Android.ArrowHeadStyle,Android.Graphics.Paint)">
+            <summary>
+            Draws a line with an arrowhead at its end point.
+            </summary>
+            <param name="self">Canvas</param>
+            <param name="start">Start point</param>
+            <param name="stop">End point</param>
+            <param name="radius">Length of a side of the arrowhead, from point to base</param>
+            <param name="angle">Angle of the arrowhead's point, in degrees</param>
+            <param name="arrowHeadStyle">Arrowhead style</param>
+            <param name="paint">Paint to draw with</param>
+        </member>
+        <member name="M:Kilsten.Android.CanvasExt.DrawArrow(Android.Graphics.Canvas,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,Kilsten.Android.ArrowHeadStyle,Android.Graphics.Paint)">
+            <summary>
+            Draws a line with an arrowhead at its end point.
+            </summary>
+            <param name="self">Canvas</param>
+            <param name="startX">X coordinate of the start point</param>
+            <param name="startY">Y coordinate of the start point</param>
+            <param name="stopX">X coordinate of the end point</param>
+            <param name="stopY">Y coordinate of the end point</param>
+            <param name="radius">Length of a side of the arrowhead, from point to base</param>
+            <param name="angle">Angle of the arrowhead's point, in degrees</param>
+            <param name="arrowHeadStyle">Arrowhead style</param>
+            <param name="paint">Paint to draw with</param>
+        </member>
+        <member name="T:Kilsten.Android.ContextExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Content.Context"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.ContextExt.DpToPixel(Android.Content.Context,System.Single)">
+            <summary>
+            Converts a density-independent pixel (dp) value to pixels, rounded to the nearest pixel.
+            </summary>
+            <param name="self">Context</param>
+            <param name="dp">Value, in dp</param>
+            <returns>Value, in pixels</returns>
+        </member>
+        <member name="M:Kilsten.Android.ContextExt.SpToPixel(Android.Content.Context,System.Single)">
+            <summary>
+            Converts a scale-independent pixel (sp) value to pixels, rounded to the nearest pixel.
+            </summary>
+            <param name="self">Context</param>
+            <param name="sp">Value, in sp</param>
+            <returns>Value, in pixels</returns>
+        </member>
+        <member name="M:Kilsten.Android.ContextExt.GetDndAlarmSettings(Android.Content.Context)">
+            <summary>
+            Determines whether the current Do Not Disturb settings allow alarm sounds and vibration.
+            </summary>
+            <param name="self">Context</param>
+            <returns>Whether alarm sounds are allowed, and whether vibration is allowed</returns>
+        </member>
+        <member name="T:Kilsten.Android.Controls.SimplePagerAdapter">
+            <summary>
+            <see cref="T:AndroidX.ViewPager.Widget.PagerAdapter"/> that inflates each page from a layout resource, and raises <see cref="E:Kilsten.Android.Controls.SimplePagerAdapter.PageCreated"/>
+            so that pages can be initialised.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.#ctor(System.Int32[])">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.SimplePagerAdapter"/>.
+            </summary>
+            <param name="layoutResIds">Layout resource ID for each page, in order</param>
+        </member>
+        <member name="P:Kilsten.Android.Controls.SimplePagerAdapter.UsePageCaching">
+            <summary>
+            Whether the pager may reuse pages it has already created. Set to false to have pages recreated whenever the
+            adapter is refreshed. Default is true.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.SimplePagerAdapter.Count">
+            <summary>
+            Number of pages.
+            </summary>
+        </member>
+        <member name="T:Kilsten.Android.Controls.SimplePagerAdapter.PageCreatedEventArgs">
+            <summary>
+            Event arguments for <see cref="E:Kilsten.Android.Controls.SimplePagerAdapter.PageCreated"/>.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.SimplePagerAdapter.PageCreatedEventArgs.Position">
+            <summary>
+            Position of the page
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.SimplePagerAdapter.PageCreatedEventArgs.PageView">
+            <summary>
+            The created page
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.SimplePagerAdapter.PageCreatedEventArgs.PageLayoutResId">
+            <summary>
+            Layout resource ID of the created page
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Controls.SimplePagerAdapter.PageCreated">
+            <summary>
+            Raised when a page is created. The page at a given position may be created more than once.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.ResetPageCreated">
+            <summary>
+            Removes all <see cref="E:Kilsten.Android.Controls.SimplePagerAdapter.PageCreated"/> handlers.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.InstantiateItem(Android.Views.ViewGroup,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.IsViewFromObject(Android.Views.View,Java.Lang.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.DestroyItem(Android.Views.ViewGroup,System.Int32,Java.Lang.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.SimplePagerAdapter.GetItemPosition(Java.Lang.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Kilsten.Android.Controls.ZoomFrame">
+            <summary>
+            Square <see cref="T:Android.Widget.FrameLayout"/>, with its height set to match its width, for use as the child of a
+            <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomFrame"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomFrame"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomFrame"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomFrame"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+            <param name="defStyleRes">Default style resource ID</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.OnMeasure(System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomFrame.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Kilsten.Android.Controls.ZoomImage">
+            <summary>
+            <see cref="T:Android.Widget.ImageView"/> for use as the child of a <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>, raising <see cref="E:Kilsten.Android.Controls.ZoomImage.LaidOut"/> after
+            each layout pass.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomImage.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomImage"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomImage.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomImage"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomImage.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomImage"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomImage.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomImage"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+            <param name="defStyleRes">Default style resource ID</param>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomImage.LaidOut">
+            <summary>
+            Raised after the view has been laid out.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomImage.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Kilsten.Android.Controls.ZoomLayout">
+            <summary>
+            <see cref="T:Android.Widget.FrameLayout"/> that lets the user pinch-zoom and pan a single child view, typically a
+            <see cref="T:Kilsten.Android.Controls.ZoomImage"/> or <see cref="T:Kilsten.Android.Controls.ZoomFrame"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Controls.ZoomLayout"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+            <param name="defStyleRes">Default style resource ID</param>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomLayout.LaidOut">
+            <summary>
+            Raised after the view has been laid out.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomLayout.SingleTap">
+            <summary>
+            Raised when the user taps the view.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomLayout.LongPress">
+            <summary>
+            Raised when the user long-presses the view.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomLayout.ZoomLevelChanged">
+            <summary>
+            Raised when the zoom level changes.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Controls.ZoomLayout.Fling">
+            <summary>
+            Raised when the user flings the view.
+            </summary>
+        </member>
+        <member name="T:Kilsten.Android.Controls.ZoomLayout.ZoomLevelChangedEventArgs">
+            <summary>
+            Event arguments for <see cref="E:Kilsten.Android.Controls.ZoomLayout.ZoomLevelChanged"/>.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.ZoomLevelChangedEventArgs.ZoomLevel">
+            <summary>The new zoom level</summary>
+        </member>
+        <member name="T:Kilsten.Android.Controls.ZoomLayout.FlingEventArgs">
+            <summary>
+            Event arguments for <see cref="E:Kilsten.Android.Controls.ZoomLayout.Fling"/>.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.FlingEventArgs.E1">
+            <summary>The down event that started the fling, if available</summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.FlingEventArgs.E2">
+            <summary>The move event that triggered the fling</summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.FlingEventArgs.VelocityX">
+            <summary>Horizontal velocity, in pixels per second</summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.FlingEventArgs.VelocityY">
+            <summary>Vertical velocity, in pixels per second</summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.ZoomLevel">
+            <summary>
+            The child's current scale, limited to between <see cref="P:Kilsten.Android.Controls.ZoomLayout.MinZoomLevel"/> and <see cref="P:Kilsten.Android.Controls.ZoomLayout.MaxZoomLevel"/>.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.MinZoomLevel">
+            <summary>
+            The minimum zoom level. Default is 1.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Controls.ZoomLayout.MaxZoomLevel">
+            <summary>
+            The maximum zoom level. Default is 4.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.ResetZoom">
+            <summary>
+            Scales the child to fit the view, within the zoom limits, and centres it. Raises <see cref="E:Kilsten.Android.Controls.ZoomLayout.ZoomLevelChanged"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.EnsureVisible(Android.Graphics.PointF)">
+            <summary>
+            If a point in the child is not visible, pans to centre it. The zoom level is not changed.
+            </summary>
+            <param name="childViewPt">Point, in the child's coordinates</param>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.OnInterceptTouchEvent(Android.Views.MotionEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.Android.Controls.ZoomLayout.OnTouchEvent(Android.Views.MotionEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Kilsten.Android.DialogFragmentExt">
+            <summary>
+            Extension methods for <see cref="T:AndroidX.Fragment.App.DialogFragment"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.DialogFragmentExt.EnterImmersiveMode(AndroidX.Fragment.App.DialogFragment)">
+            <summary>
+            Enters immersive mode for the fragment's dialog, hiding the system bars.
+            Call from <c>OnStart()</c> and <c>OnResume()</c> in the DialogFragment subclass.
+            </summary>
+            <param name="self">Dialog fragment</param>
+        </member>
+        <member name="T:Kilsten.Android.ImageViewExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Widget.ImageView"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.ImageViewExt.SetImageBitmap(Android.Widget.ImageView,Android.Graphics.Bitmap,System.Action)">
+            <summary>
+            Sets the view's bitmap, and runs an action once the view has been updated to show it.
+            </summary>
+            <param name="self">Image view</param>
+            <param name="bitmap">Bitmap to show</param>
+            <param name="onBitmapLoaded">Action to run once the bitmap is shown</param>
+        </member>
+        <member name="T:Kilsten.Android.JavaObjectAdapter`1">
+            <summary>
+            Wraps a .NET object so that it can be passed where a <see cref="T:Java.Lang.Object"/> is required, such as
+            <see cref="P:Android.Views.View.Tag"/>.
+            </summary>
+            <typeparam name="T">Wrapped object type</typeparam>
+            <param name="obj">Object to wrap</param>
+        </member>
+        <member name="M:Kilsten.Android.JavaObjectAdapter`1.#ctor(`0)">
+            <summary>
+            Wraps a .NET object so that it can be passed where a <see cref="T:Java.Lang.Object"/> is required, such as
+            <see cref="P:Android.Views.View.Tag"/>.
+            </summary>
+            <typeparam name="T">Wrapped object type</typeparam>
+            <param name="obj">Object to wrap</param>
+        </member>
+        <member name="P:Kilsten.Android.JavaObjectAdapter`1.Value">
+            <summary>
+            The wrapped object.
+            </summary>
+        </member>
+        <member name="T:Kilsten.Android.ResourcesExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Content.Res.Resources"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.ResourcesExt.MakeQuestion(Android.Content.Res.Resources,System.String)">
+            <summary>
+            Formats a string as a question, using the localised question format.
+            </summary>
+            <param name="self">Resources</param>
+            <param name="str">String to make into a question</param>
+            <returns>Question string</returns>
+        </member>
+        <member name="M:Kilsten.Android.ResourcesExt.MakeQuestion(Android.Content.Res.Resources,System.Int32)">
+            <summary>
+            Formats a string resource as a question, using the localised question format.
+            </summary>
+            <param name="self">Resources</param>
+            <param name="id">String resource ID</param>
+            <returns>Question string</returns>
+        </member>
+        <member name="M:Kilsten.Android.ResourcesExt.MakeQuestionQuantityString(Android.Content.Res.Resources,System.Int32,System.Int32)">
+            <summary>
+            Formats a quantity string resource as a question, using the localised question format.
+            </summary>
+            <param name="self">Resources</param>
+            <param name="id">Plurals resource ID</param>
+            <param name="quantity">Quantity</param>
+            <returns>Question string</returns>
+        </member>
+        <member name="M:Kilsten.Android.ResourcesExt.MakeQuestionQuantityString(Android.Content.Res.Resources,System.Int32,System.Int32,Java.Lang.Object[])">
+            <summary>
+            Formats a quantity string resource as a question, using the localised question format.
+            </summary>
+            <param name="self">Resources</param>
+            <param name="id">Plurals resource ID</param>
+            <param name="quantity">Quantity</param>
+            <param name="formatArgs">Format arguments</param>
+            <returns>Question string</returns>
+        </member>
+        <member name="T:Kilsten.Android.SharedPreferencesExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Content.ISharedPreferences"/> and <see cref="T:Android.Content.ISharedPreferencesEditor"/>, for storing
+            <see cref="T:System.DateTime"/> and <see cref="T:System.TimeSpan"/> values.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.SharedPreferencesExt.GetDateTime(Android.Content.ISharedPreferences,System.String,System.DateTime)">
+            <summary>
+            Gets a <see cref="T:System.DateTime"/> value stored by <see cref="M:Kilsten.Android.SharedPreferencesExt.PutDateTime(Android.Content.ISharedPreferencesEditor,System.String,System.DateTime)"/>.
+            </summary>
+            <param name="self">Preferences</param>
+            <param name="key">Preference name</param>
+            <param name="defValue">Value to return if the preference does not exist</param>
+            <returns>The preference value if it exists, otherwise <paramref name="defValue"/></returns>
+        </member>
+        <member name="M:Kilsten.Android.SharedPreferencesExt.PutDateTime(Android.Content.ISharedPreferencesEditor,System.String,System.DateTime)">
+            <summary>
+            Sets a <see cref="T:System.DateTime"/> value in the editor, to be written when <c>Commit()</c> or <c>Apply()</c> is called.
+            </summary>
+            <param name="self">Preferences editor</param>
+            <param name="key">Preference name</param>
+            <param name="value">Value to set</param>
+            <returns>The same editor, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.SharedPreferencesExt.GetTimeSpan(Android.Content.ISharedPreferences,System.String,System.TimeSpan)">
+            <summary>
+            Gets a <see cref="T:System.TimeSpan"/> value stored by <see cref="M:Kilsten.Android.SharedPreferencesExt.PutTimeSpan(Android.Content.ISharedPreferencesEditor,System.String,System.TimeSpan)"/>.
+            </summary>
+            <param name="self">Preferences</param>
+            <param name="key">Preference name</param>
+            <param name="defValue">Value to return if the preference does not exist</param>
+            <returns>The preference value if it exists, otherwise <paramref name="defValue"/></returns>
+        </member>
+        <member name="M:Kilsten.Android.SharedPreferencesExt.PutTimeSpan(Android.Content.ISharedPreferencesEditor,System.String,System.TimeSpan)">
+            <summary>
+            Sets a <see cref="T:System.TimeSpan"/> value in the editor, to be written when <c>Commit()</c> or <c>Apply()</c> is called.
+            </summary>
+            <param name="self">Preferences editor</param>
+            <param name="key">Preference name</param>
+            <param name="value">Value to set</param>
+            <returns>The same editor, so that calls can be chained</returns>
+        </member>
+        <member name="T:Kilsten.Android.TextViewExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Widget.TextView"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.TextViewExt.SetTextWithDrawables(Android.Widget.TextView,Android.Content.Context,System.String,System.Int32[])">
+            <summary>
+            Sets text containing placeholders <c>{0}</c>, <c>{1}</c>, etc, and replaces each placeholder with the
+            corresponding drawable, tinted to match the text colour.
+            </summary>
+            <param name="self">Text view</param>
+            <param name="context">Context used to load the drawables</param>
+            <param name="formatStr">Text containing placeholders</param>
+            <param name="drawableIds">Drawable resource IDs, one for each placeholder</param>
+        </member>
+        <member name="T:Kilsten.Android.Validation.DialogFormValidator">
+            <summary>
+            <see cref="T:Kilsten.Android.Validation.FormValidator"/> for a form in an <see cref="T:AndroidX.AppCompat.App.AlertDialog"/>. Validates the form when the positive
+            button is clicked, and only dismisses the dialog if it is valid.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Validation.DialogFormValidator.#ctor(AndroidX.AppCompat.App.AlertDialog,Android.Views.View)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Validation.DialogFormValidator"/>.
+            </summary>
+            <param name="dialog">Dialog containing the form. It must have a positive button.</param>
+            <param name="dialogFormView">View in the dialog that contains the form elements</param>
+        </member>
+        <member name="M:Kilsten.Android.Validation.DialogFormValidator.CreateFrom(AndroidX.AppCompat.App.AlertDialog.Builder,Android.Views.View)">
+            <summary>
+            Creates and shows a dialog from a builder, and attaches a validator to it.
+            </summary>
+            <param name="adb">Dialog builder. The dialog must have a positive button.</param>
+            <param name="dialogFormView">View in the dialog that contains the form elements</param>
+            <returns>The validator</returns>
+        </member>
+        <member name="P:Kilsten.Android.Validation.DialogFormValidator.Dialog">
+            <summary>
+            The dialog being validated.
+            </summary>
+        </member>
+        <member name="P:Kilsten.Android.Validation.DialogFormValidator.ShowFeedback">
+            <summary>
+            Whether to show error messages on invalid elements when the positive button is clicked. Default is true.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Validation.DialogFormValidator.Valid">
+            <summary>
+            Raised when the positive button is clicked and the form is valid, just before the dialog is dismissed. Use it
+            to read the validated values.
+            </summary>
+        </member>
+        <member name="E:Kilsten.Android.Validation.DialogFormValidator.Invalid">
+            <summary>
+            Raised when the positive button is clicked and the form is not valid. The dialog stays open.
+            </summary>
+        </member>
+        <member name="T:Kilsten.Android.Validation.FormValidator">
+            <summary>
+            Validates the <see cref="T:Android.Widget.EditText"/> elements in a view against length, numeric range and custom rules, showing
+            error messages on invalid elements.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.#ctor(Android.Views.View)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.Android.Validation.FormValidator"/>.
+            </summary>
+            <param name="formView">View containing the form elements</param>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.ValidateAll(System.Boolean)">
+            <summary>
+            Validates all form elements that have rules.
+            </summary>
+            <param name="showFeedback">True to show error messages on invalid elements, false to validate silently</param>
+            <returns>True if the form is valid, otherwise false</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.Validate(System.Int32,System.Boolean)">
+            <summary>
+            Validates a single form element. An element with no rules is valid.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="showFeedback">True to show error messages on invalid elements, false to validate silently</param>
+            <returns>True if the form element is valid, otherwise false</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetValueValidator(System.Int32,System.Func{System.String,System.ValueTuple{System.Boolean,System.String}})">
+            <summary>
+            Sets a custom validation rule.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="validator">
+            Function that takes the element's trimmed text and returns whether it is valid, and an error message if not
+            </param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetLengthMin(System.Int32,System.Int32)">
+            <summary>
+            Sets the minimum length rule.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="value">Minimum length</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetLengthMax(System.Int32,System.Int32)">
+            <summary>
+            Sets the maximum length rule.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="value">Maximum length</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetLengthFixed(System.Int32,System.Int32)">
+            <summary>
+            Sets an exact length rule.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="value">Required length</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetLengthRange(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets minimum and maximum length rules.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="valueMin">Minimum length</param>
+            <param name="valueMax">Maximum length</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetNumValueMin(System.Int32,System.Single,System.Boolean)">
+            <summary>
+            Sets a rule that the element must contain a number no less than a minimum.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="value">Minimum value</param>
+            <param name="required">True if the element must contain a number, or false to also allow it to be empty. Applies to
+            all numeric rules for the element.</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetNumValueMax(System.Int32,System.Single,System.Boolean)">
+            <summary>
+            Sets a rule that the element must contain a number no greater than a maximum.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="value">Maximum value</param>
+            <param name="required">True if the element must contain a number, or false to also allow it to be empty. Applies to
+            all numeric rules for the element.</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.Android.Validation.FormValidator.SetNumValueRange(System.Int32,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Sets a rule that the element must contain a number within a range, inclusive.
+            </summary>
+            <param name="editTextResId">ID of the EditText element</param>
+            <param name="valueMin">Minimum value</param>
+            <param name="valueMax">Maximum value</param>
+            <param name="required">True if the element must contain a number, or false to also allow it to be empty. Applies to
+            all numeric rules for the element.</param>
+            <returns>This validator, so that calls can be chained</returns>
+        </member>
+        <member name="T:Kilsten.Android.WindowExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Views.Window"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.Android.WindowExt.EnterImmersiveMode(Android.Views.Window)">
+            <summary>
+            Enters immersive mode, hiding the system bars until the user swipes from the edge of the screen.
+            </summary>
+            <param name="self">Window</param>
+        </member>
+        <member name="T:Kilsten.Android.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

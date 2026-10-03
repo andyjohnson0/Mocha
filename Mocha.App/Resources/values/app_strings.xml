@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- 
+This file contains strings that should not be translated.
+-->
+
+<resources>
+
+	<string name="vendorName" translatable="false">Andrew Johnson</string>
+	<string name="vendorDomain" translatable="false">andyjohnson.uk</string>
+	<string name="vendorUrl" translatable="false">https://andyjohnson.uk</string>
+
+</resources>

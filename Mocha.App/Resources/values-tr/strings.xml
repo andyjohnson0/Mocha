@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- tr / Turkish -->
+
+<resources>
+
+	<string name="appName">Moka</string>
+	<string name="appVersion">Sürüm %1$s</string>
+	<string name="appCopyright">Telif hakkı © %1$s</string>
+
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Kahve Poşeti</string>
+	<string name="dripSystem">Damlama Sistemi</string>
+	<string name="espresso">Espresso</string>
+	<string name="frenchPress">Kafeterya</string>
+	<string name="percolator">Süzgeç</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Başlat/durdur</string>
+	<string name="increaseTime">Süreyi artırın</string>
+	<string name="decreaseTime">Süreyi azalt</string>
+	<string name="useVoice">Sesi kullan</string>
+	<string name="useKeyboard">Klavyeyi kullan</string>
+	<string name="add">Ek olarak</string>
+	<string name="edit">Düzenlemek</string>
+	<string name="delete">Silmek</string>
+	<string name="more">Daha</string>
+	<string name="done">Bitti</string>
+	<string name="information">Bilgi</string>
+	<string name="settings">Ayarlar</string>
+	<string name="alarmSound">Alarm sesi</string>
+	<string name="alarmVibrate">Titreşim</string>
+	<string name="notificationSettings">Bildirimler</string>
+	<string name="notificationSettingsDescription">Bildirim ayarları</string>
+	<string name="aboutThisApp">Bu uygulama hakkında</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Benim kahvem</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Kahve hazır!</string>
+	<string name="coffeeBrewingMsg">Kahve demleniyor</string>
+	<string name="voiceInputRecognitionFailedMsg">Konuşma tanınmadı</string>
+	<string name="methodNameInUseMsg">Bu ad zaten kullanılıyor</string>
+	<string name="methodNameRequiredMsg">Ad gerekli</string>
+	<string name="deletedMsg">Silindi</string>
+	<string name="continueOnPhoneMsg">Telefonla devam et</string>
+	<string name="openSettingsErrorMsg">Ayarlar açılamıyor</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Konuşma Girişi</string>
+	<string name="recordAudioPermissionRequestMsg">Bu uygulamanın konuşma girişini kullanmasına izin verilsin mi?</string>
+	<string name="postNotificationsPermissionPrompt">Bildirimler</string>
+	<string name="postNotificationsPermissionRequestMsg">Bu uygulamanın size bildirim göndermesine izin verilsin mi? Bu, kahvenizin ne zaman hazır olduğunu bilmeniz için gereklidir.</string>
+	<string name="postNotificationsPermissionExplainMsg">Bu uygulamanın, kahveniz hazır olduğunda size bildirim gönderebilmesi gerekiyor.</string>
+	<string name="postNotificationsPermissionEnableMsg">Size bildirim gönderme izni gerekiyor. Uygulama ayarlarında etkinleştirin?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Alarmlar</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Bu uygulamanın alarm kurmasına izin verilsin mi? Bu, kahvenizin ne zaman hazır olduğunu bilmeniz için gereklidir.</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Kahve demleme</string>
+	<string name="continuingActivityChannelDescription">Kahve demlenirken gösterilir</string>
+	<string name="alarmNotificationChannelName">Kahve hazır</string>
+	<string name="alarmNotificationChannelDescription">Kahve hazır olduğunda gösterilir</string>
+	
+</resources>

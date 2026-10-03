@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- uk / Ukranian -->
+
+<resources>
+
+	<string name="appName">Мокко</string>
+	<string name="appVersion">Версія %1$s</string>
+	<string name="appCopyright">Авторське право © %1$s</string>
+
+	<!-- Coffee methods -->
+	<string name="aeropress">АероПрес\u00AE</string>
+	<string name="coffeeBag">Сумка для кави</string>
+	<string name="dripSystem">Крапельна система</string>
+	<string name="espresso">Еспресо</string>
+	<string name="frenchPress">Кафетер</string>
+	<string name="percolator">Перколятор</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Пуск/зупинка</string>
+	<string name="increaseTime">Збільште час</string>
+	<string name="decreaseTime">Зменшити час</string>
+	<string name="useVoice">Використовуйте голос</string>
+	<string name="useKeyboard">Використовуйте клавіатуру</string>
+	<string name="add">додатковий</string>
+	<string name="edit">Редагувати</string>
+	<string name="delete">видалити</string>
+	<string name="more">більше</string>
+	<string name="done">Готово</string>
+	<string name="information">Інформація</string>
+	<string name="settings">Налаштування</string>
+	<string name="alarmSound">Звук будильника</string>
+	<string name="alarmVibrate">Вібрувати</string>
+	<string name="notificationSettings">Сповіщення</string>
+	<string name="notificationSettingsDescription">Налаштування сповіщень</string>
+	<string name="aboutThisApp">Про цю програму</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Моя кава</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Кава готова!</string>
+	<string name="coffeeBrewingMsg">Вариться кава</string>
+	<string name="voiceInputRecognitionFailedMsg">Мовлення не розпізнано</string>
+	<string name="methodNameInUseMsg">Назва вже використовується</string>
+	<string name="methodNameRequiredMsg">Потрібна назва</string>
+	<string name="deletedMsg">Видалено</string>
+	<string name="continueOnPhoneMsg">Продовжити по телефону</string>
+	<string name="openSettingsErrorMsg">Неможливо відкрити налаштування</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Введення мови</string>
+	<string name="recordAudioPermissionRequestMsg">Дозволити цій програмі використовувати мовленнєве введення?</string>
+	<string name="postNotificationsPermissionPrompt">Сповіщення</string>
+	<string name="postNotificationsPermissionRequestMsg">Дозволити цій програмі надсилати вам сповіщення? Це потрібно для того, щоб ви знали, коли ваша кава готова.</string>
+	<string name="postNotificationsPermissionExplainMsg">Ця програма повинна мати можливість надсилати вам сповіщення, щоб ви знали, коли ваша кава буде готова.</string>
+	<string name="postNotificationsPermissionEnableMsg">Потрібен дозвіл на надсилання сповіщень. Увімкнути в налаштуваннях програми?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Сигналізація</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Дозволити цій програмі встановлювати будильники? Це потрібно для того, щоб ви знали, коли ваша кава готова.</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Заварювання кави</string>
+	<string name="continuingActivityChannelDescription">Відображається під час приготування кави</string>
+	<string name="alarmNotificationChannelName">Кава готова</string>
+	<string name="alarmNotificationChannelDescription">Відображається, коли кава готова</string>
+	
+</resources>

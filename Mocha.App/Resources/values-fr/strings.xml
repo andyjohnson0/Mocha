@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- fr / French -->
+
+<resources>
+
+	<string name="appName">Moka</string>
+	<string name="appVersion">Version %1$s</string>
+	<string name="appCopyright">Droits d\'auteur © %1$s</string>
+
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Sac à café</string>
+	<string name="dripSystem">Système goutte à goutte</string>
+	<string name="espresso">Expresso</string>
+	<string name="frenchPress">Cafetière</string>
+	<string name="percolator">Percolateur</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Démarrer/arrêter</string>
+	<string name="increaseTime">Augmenter le temps</string>
+	<string name="decreaseTime">Diminuer le temps</string>
+	<string name="useVoice">Utiliser la voix</string>
+	<string name="useKeyboard">Utiliser le clavier</string>
+	<string name="add">Supplémentaire</string>
+	<string name="edit">Modifier</string>
+	<string name="delete">Supprimer</string>
+	<string name="more">Plus</string>
+	<string name="done">Fini</string>
+	<string name="information">Information</string>
+	<string name="settings">Paramètres</string>
+	<string name="alarmSound">Bruit d\'alarme</string>
+	<string name="alarmVibrate">Vibrer</string>
+	<string name="notificationSettings">Notifications</string>
+	<string name="notificationSettingsDescription">Paramètres des notifications</string>
+	<string name="aboutThisApp">À propos de cette application</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Mon café</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Le café est prêt !</string>
+	<string name="coffeeBrewingMsg">Le café est en train de se préparer</string>
+	<string name="voiceInputRecognitionFailedMsg">Discours non reconnu</string>
+	<string name="methodNameInUseMsg">Nom déjà utilisé</string>
+	<string name="methodNameRequiredMsg">Nom obligatoire</string>
+	<string name="deletedMsg">Supprimé</string>
+	<string name="continueOnPhoneMsg">Continuer au téléphone</string>
+	<string name="openSettingsErrorMsg">Impossible d\'ouvrir les paramètres</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Saisie vocale</string>
+	<string name="recordAudioPermissionRequestMsg">Autoriser cette application à utiliser la saisie vocale ?</string>
+	<string name="postNotificationsPermissionPrompt">Notifications</string>
+	<string name="postNotificationsPermissionRequestMsg">Autoriser cette application à vous envoyer des notifications ? Ceci est nécessaire pour que vous sachiez quand votre café est prêt.</string>
+	<string name="postNotificationsPermissionExplainMsg">Cette application doit pouvoir vous envoyer des notifications pour que vous sachiez quand votre café est prêt.</string>
+	<string name="postNotificationsPermissionEnableMsg">L\'autorisation de vous envoyer des notifications est requise. L\'activer dans les paramètres de l\'application ?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Alarmes</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Autoriser cette application à définir des alarmes ? Ceci est nécessaire pour que vous sachiez quand votre café est prêt.</string>
+	
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Préparation du café</string>
+	<string name="continuingActivityChannelDescription">Affiché lorsque le café est en train de couler</string>
+	<string name="alarmNotificationChannelName">Café prêt</string>
+	<string name="alarmNotificationChannelDescription">Affiché lorsque le café est prêt</string>
+	
+</resources>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+
+	<color name="colorAccent">#522606</color>
+
+	<!-- Backgrounds -->
+	<color name="backgroundTransparent">#00000000</color>
+	<color name="backgroundOpaque">#FF000000</color>
+	<color name="backgroundSemiOpaque">#BB000000</color>
+	<color name="backgroundTranslucent">#AA000000</color>
+	
+</resources>

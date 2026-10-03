@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android36.0</TargetFramework>
+	<TargetFrameworkVersion>34</TargetFrameworkVersion>
+	<SupportedOSPlatformVersion>30.0</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationId>uk.andyjohnson.Mocha</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);XA4218</MSBuildWarningsAsMessages>
+    <AssemblyName>Mocha.App</AssemblyName>
+    <RootNamespace>Mocha.App</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsTrimmable>True</IsTrimmable>
+    <AndroidPackageFormats>apk</AndroidPackageFormats>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishTrimmed>true</PublishTrimmed>
+    <AssemblyTitle>uk.andyjohnson.Mocha</AssemblyTitle>
+  </PropertyGroup>
+	<PropertyGroup>
+		<RuntimeIdentifiers>android-arm;android-arm64;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+		<RuntimeIdentifiers>$(RuntimeIdentifiers);android-x86</RuntimeIdentifiers>
+	</PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\drawable\button_round_states.xml" />
+    <None Remove="Resources\drawable\image_round_shape.xml" />
+    <None Remove="Resources\drawable\ripple_background_selector.xml" />
+    <None Remove="Resources\drawable\ripple_effect.xml" />
+    <None Remove="Resources\drawable\ripple_rounded_corners_shape.xml" />
+    <None Remove="Resources\layout\about_activity.xml" />
+    <None Remove="Resources\layout\alarm_activity.xml" />
+    <None Remove="Resources\layout\edit_brew_time_activity.xml" />
+    <None Remove="Resources\layout\edit_method_name_activity.xml" />
+    <None Remove="Resources\layout\method_context_menu.xml" />
+    <None Remove="Resources\layout\method_list_item.xml" />
+    <None Remove="Resources\layout\select_coffee_activity.xml" />
+    <None Remove="Resources\layout\select_coffee_layout.xml" />
+    <None Remove="Resources\layout\select_method_activity.xml" />
+    <None Remove="Resources\layout\settings_activity.xml" />
+    <None Remove="Resources\layout\settings_page_0.xml" />
+    <None Remove="Resources\layout\settings_page_1.xml" />
+    <None Remove="Resources\layout\settings_page_2.xml" />
+    <None Remove="Resources\layout\settings_page_3.xml" />
+    <None Remove="Resources\values-de\strings.xml" />
+    <None Remove="Resources\values-en-rUK\strings.xml" />
+    <None Remove="Resources\values-es\strings.xml" />
+    <None Remove="Resources\values-fr\strings.xml" />
+    <None Remove="Resources\values-el\strings.xml" />
+    <None Remove="Resources\values-it\strings.xml" />
+    <None Remove="Resources\values-nl\strings.xml" />
+    <None Remove="Resources\values-pl\strings.xml" />
+    <None Remove="Resources\values-pt-rBR\strings.xml" />
+    <None Remove="Resources\values-pt\strings.xml" />
+    <None Remove="Resources\values-tr\strings.xml" />
+    <None Remove="Resources\values-uk\strings.xml" />
+    <None Remove="Resources\values\app_strings.xml" />
+    <None Remove="Resources\values\colors.xml" />
+    <None Remove="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.2" />
+    <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.2.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Extensions" Version="2.2.0.37" />
+    <PackageReference Include="Xamarin.AndroidX.Wear" Version="1.4.0.2" />
+    <PackageReference Include="Xamarin.AndroidX.Wear.Ongoing" Version="1.1.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.Wear.RemoteInteractions" Version="1.2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\mipmap-anydpi-v26\" />
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Kilsten.Android">
+      <HintPath>..\lib\Kilsten.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Kilsten.WearOS">
+      <HintPath>..\lib\Kilsten.WearOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

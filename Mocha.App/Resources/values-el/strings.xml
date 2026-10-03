@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- el / Greek -->
+
+<resources>
+	
+    <string name="appName">Μόκα</string>
+	<string name="appVersion">Εκδοχή %1$s</string>
+	<string name="appCopyright">Πνευματική ιδιοκτησία © %1$s</string>
+	
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Τσάντα καφέ</string>
+	<string name="dripSystem">Σύστημα σταγόνας</string>
+	<string name="espresso">Εσπρέσο</string>
+	<string name="frenchPress">καφετιέρα</string>
+	<string name="percolator">Διηθητήριο</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Έναρξη/διακοπή</string>
+	<string name="increaseTime">Αύξηση χρόνου</string>
+	<string name="decreaseTime">Μειώστε το χρόνο</string>
+	<string name="useVoice">Χρησιμοποιήστε φωνή</string>
+	<string name="useKeyboard">Χρησιμοποιήστε πληκτρολόγιο</string>
+	<string name="add">Προσθέτω</string>
+	<string name="edit">Εκδίδω</string>
+	<string name="delete">Διαγράφω</string>
+	<string name="more">Περισσότερο</string>
+	<string name="done">Γινώμενος</string>
+	<string name="information">Για</string>
+	<string name="settings">Ρυθμίσεις</string>
+	<string name="alarmSound">Ήχος συναγερμού</string>
+	<string name="alarmVibrate">Δονούμαι</string>
+	<string name="notificationSettings">Ειδοποιήσεις</string>
+	<string name="notificationSettingsDescription">Ρυθμίσεις ειδοποιήσεων</string>
+	<string name="aboutThisApp">Σχετικά με αυτήν την εφαρμογή</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Ο καφές μου</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Ο καφές είναι έτοιμος!</string>
+	<string name="coffeeBrewingMsg">Ο καφές παρασκευάζεται</string>
+	<string name="voiceInputRecognitionFailedMsg">Η ομιλία δεν αναγνωρίζεται</string>
+	<string name="methodNameInUseMsg">Το όνομα χρησιμοποιείται ήδη</string>
+	<string name="methodNameRequiredMsg">Απαιτείται όνομα</string>
+	<string name="deletedMsg">Διαγράφηκε</string>
+	<string name="continueOnPhoneMsg">Συνέχεια στο τηλέφωνο</string>
+	<string name="openSettingsErrorMsg">Δεν είναι δυνατό το άνοιγμα των ρυθμίσεων</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Εισαγωγή ομιλίας</string>
+	<string name="recordAudioPermissionRequestMsg">Να επιτρέπεται σε αυτήν την εφαρμογή να χρησιμοποιεί εισαγωγή ομιλίας;</string>
+	<string name="postNotificationsPermissionPrompt">Ειδοποιήσεις</string>
+	<string name="postNotificationsPermissionRequestMsg">Να επιτρέπεται σε αυτήν την εφαρμογή να σας στέλνει ειδοποιήσεις; Αυτό απαιτείται για να γνωρίζετε πότε ο καφές σας είναι έτοιμος.</string>
+	<string name="postNotificationsPermissionExplainMsg">Αυτή η εφαρμογή πρέπει να μπορεί να σας στέλνει ειδοποιήσεις, ώστε να γνωρίζετε πότε είναι έτοιμος ο καφές σας.</string>
+	<string name="postNotificationsPermissionEnableMsg">Απαιτείται άδεια αποστολής ειδοποιήσεων. Ενεργοποίηση στις ρυθμίσεις της εφαρμογής;</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Συναγερμός</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Να επιτρέπεται σε αυτήν την εφαρμογή να ορίζει ξυπνητήρια; Αυτό απαιτείται για να γνωρίζετε πότε ο καφές σας είναι έτοιμος.</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Παρασκευή καφέ</string>
+	<string name="continuingActivityChannelDescription">Εμφανίζεται κατά την παρασκευή καφέ</string>
+	<string name="alarmNotificationChannelName">Καφές έτοιμος</string>
+	<string name="alarmNotificationChannelDescription">Εμφανίζεται όταν ο καφές είναι έτοιμος</string>
+	
+</resources>

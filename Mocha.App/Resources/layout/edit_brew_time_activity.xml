@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:deviceIds="wear"
+    android:background="@color/backgroundOpaque"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/methodName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium"
+        android:gravity="center"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:breakStrategy="balanced"
+        android:hyphenationFrequency="full"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintBottom_toTopOf="@id/brewTime"/>
+
+    <TextView
+        android:id="@+id/brewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <ImageButton
+        android:id="@+id/decrButton"
+        android:layout_width="@dimen/buttonSizeStd"
+        android:layout_height="@dimen/buttonSizeStd"
+        android:src="@drawable/ic_remove"
+        android:background="@drawable/button_round_states"
+        android:scaleType="center"
+        android:contentDescription="@string/decreaseTime"
+        android:tooltipText="@string/decreaseTime"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_left"/> 
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+    <ImageButton
+        android:id="@+id/incrButton"
+        android:layout_width="@dimen/buttonSizeStd"
+        android:layout_height="@dimen/buttonSizeStd"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/button_round_states"
+        android:scaleType="center"
+        android:contentDescription="@string/increaseTime"
+        android:tooltipText="@string/increaseTime"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"/>
+
+    <ImageButton
+        android:id="@+id/okBtn"
+        android:layout_width="@dimen/buttonSizeStd"
+        android:layout_height="@dimen/buttonSizeStd"
+        android:src="@drawable/ic_done"
+        android:background="@drawable/button_round_states"
+        android:backgroundTint="@color/colorAccent"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/marginSizeMedium"
+        android:contentDescription="@string/done"
+        android:tooltipText="@string/done"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

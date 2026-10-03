@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kilsten.WearOS</name>
+    </assembly>
+    <members>
+        <member name="T:Kilsten.WearOS.Controls.WearableAlertDialog">
+            <summary>
+            Alert dialog with a title, message, and round Wear OS style image buttons. Create one with <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog.Builder"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.#ctor(Android.Content.Context,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="themeResId">Theme resource ID</param>
+        </member>
+        <member name="T:Kilsten.WearOS.Controls.WearableAlertDialog.Builder">
+            <summary>
+            Builds a <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog.Builder"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.#ctor(Android.Content.Context,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableAlertDialog.Builder"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="themeResId">Theme resource ID</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.Create">
+            <summary>
+            Creates the dialog. Call <c>Show()</c> on the result to display it.
+            </summary>
+            <returns>The dialog</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetCancelable(System.Boolean)">
+            <summary>
+            Sets whether the dialog can be cancelled by swiping or pressing back. Default is true.
+            </summary>
+            <param name="cancellable">True if the dialog can be cancelled</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetTitle(System.Int32)">
+            <summary>
+            Sets the dialog title.
+            </summary>
+            <param name="titleStringResId">Title string resource ID</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetTitle(System.String)">
+            <summary>
+            Sets the dialog title.
+            </summary>
+            <param name="title">Title</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetMessage(System.Int32)">
+            <summary>
+            Sets the dialog message.
+            </summary>
+            <param name="messageStringResId">Message string resource ID</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetMessage(System.String)">
+            <summary>
+            Sets the dialog message.
+            </summary>
+            <param name="message">Message</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetPositiveButton(System.Int32,System.Int32,System.Int32,System.EventHandler{Android.Content.DialogClickEventArgs})">
+            <summary>
+            Shows the positive (confirm) button, which dismisses the dialog and then calls the handler.
+            All parameters are optional, and the resource IDs are easy to mix up, so call this using named arguments.
+            </summary>
+            <param name="stringResId">String resource ID for the button's description and tooltip, or 0 for the default</param>
+            <param name="drawableResId">Drawable resource ID for the button image, or 0 for the default</param>
+            <param name="backgroundColourResId">Colour resource ID for the button background, or 0 for the default</param>
+            <param name="handler">Click handler, or null for none</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableAlertDialog.Builder.SetNegativeButton(System.Int32,System.Int32,System.Int32,System.EventHandler{Android.Content.DialogClickEventArgs})">
+            <summary>
+            Shows the negative (cancel) button, which dismisses the dialog and then calls the handler.
+            All parameters are optional, and the resource IDs are easy to mix up, so call this using named arguments.
+            </summary>
+            <param name="stringResId">String resource ID for the button's description and tooltip, or 0 for the default</param>
+            <param name="drawableResId">Drawable resource ID for the button image, or 0 for the default</param>
+            <param name="backgroundColourResId">Colour resource ID for the button background, or 0 for the default</param>
+            <param name="handler">Click handler, or null for none</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="T:Kilsten.WearOS.Controls.WearableButton">
+            <summary>
+            Image button that greys out its image while it is disabled.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableButton.#ctor(Android.Content.Context)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableButton"/>.
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableButton.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableButton"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableButton.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableButton"/>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="attrs">Attributes</param>
+            <param name="defStyle">Default style</param>
+        </member>
+        <member name="P:Kilsten.WearOS.Controls.WearableButton.Enabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:Kilsten.WearOS.Controls.WearableTaskDialog">
+            <summary>
+            Dialog shown while a task runs, with a title, a progress indicator and an optional cancel button. Create one with
+            <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog.Builder"/>, and dismiss it when the task finishes.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.#ctor(Android.App.Activity)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog"/>.
+            </summary>
+            <param name="context">Activity</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.#ctor(Android.App.Activity,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog"/>.
+            </summary>
+            <param name="context">Activity</param>
+            <param name="themeResId">Theme resource ID</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.OnStop">
+            <inheritdoc/>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Cancel">
+            <summary>
+            Cancels the dialog, for example when the back button is pressed, and calls the cancel button's handler.
+            </summary>
+        </member>
+        <member name="T:Kilsten.WearOS.Controls.WearableTaskDialog.Builder">
+            <summary>
+            Builds a <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.#ctor(Android.App.Activity)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog.Builder"/>.
+            </summary>
+            <param name="context">Activity</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.#ctor(Android.App.Activity,System.Int32)">
+            <summary>
+            Initialises a new <see cref="T:Kilsten.WearOS.Controls.WearableTaskDialog.Builder"/>.
+            </summary>
+            <param name="context">Activity</param>
+            <param name="themeResId">Theme resource ID</param>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.Create">
+            <summary>
+            Creates the dialog. Call <c>Show()</c> on the result to display it.
+            </summary>
+            <returns>The dialog</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetTitle(System.Int32)">
+            <summary>
+            Sets the dialog title.
+            </summary>
+            <param name="titleStringResId">Title string resource ID</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetTitle(System.String)">
+            <summary>
+            Sets the dialog title.
+            </summary>
+            <param name="title">Title</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetProgressBarTint(System.Int32)">
+            <summary>
+            Sets the colour of the progress indicator.
+            </summary>
+            <param name="colour">Colour (ARGB)</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetCancelButton(System.Int32,System.EventHandler{Android.Content.DialogClickEventArgs},System.Int32)">
+            <summary>
+            Shows a cancel button, which dismisses the dialog and then calls the handler. The handler is also called if
+            the dialog is cancelled in another way, such as with the back button.
+            </summary>
+            <param name="drawableResId">Drawable resource ID for the button image, or 0 for the default</param>
+            <param name="handler">Click handler, or null for none</param>
+            <param name="delaySecs">Delay, in seconds, before the button appears, or 0 to show it straight away</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetCancelButtonForegroundTint(System.Int32)">
+            <summary>
+            Sets the colour of the cancel button image.
+            </summary>
+            <param name="colour">Colour (ARGB)</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetCancelButtonBackgroundTint(System.Int32)">
+            <summary>
+            Sets the colour of the cancel button background.
+            </summary>
+            <param name="colour">Colour (ARGB)</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="M:Kilsten.WearOS.Controls.WearableTaskDialog.Builder.SetKeepScreenOn(System.Boolean)">
+            <summary>
+            Sets whether the screen is kept on while the dialog is shown. Default is false.
+            </summary>
+            <param name="keepScreenOn">True to keep the screen on</param>
+            <returns>This builder, so that calls can be chained</returns>
+        </member>
+        <member name="T:Kilsten.WearOS.ExternalUrl">
+            <summary>
+            Opens URLs on the phone paired with the watch.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.ExternalUrl.OpenAsync(Android.Content.Context,System.String,Android.Net.Uri)">
+            <summary>
+            Opens a URL in the browser on the paired phone. If the phone accepts the request, shows the "open on phone"
+            confirmation animation.
+            The app's manifest must declare <c>android.support.wearable.activity.ConfirmationActivity</c>.
+            </summary>
+            <param name="context">Context</param>
+            <param name="message">Message to show with the animation, e.g. "Continue on phone"</param>
+            <param name="url">URL to open</param>
+            <returns>True if the phone accepted the request, otherwise false - for example, if no phone is connected</returns>
+        </member>
+        <member name="T:Kilsten.WearOS.ListenableFutureExt">
+            <summary>
+            Extension methods for <see cref="T:Google.Common.Util.Concurrent.IListenableFuture"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.ListenableFutureExt.AsTask(Google.Common.Util.Concurrent.IListenableFuture,Java.Util.Concurrent.IExecutor)">
+            <summary>
+            Gets a task that completes when the future completes, with the future's result, its failure, or its
+            cancellation.
+            </summary>
+            <param name="self">Future</param>
+            <param name="executor">Executor to run the completion listener on</param>
+            <returns>Task representing the future</returns>
+        </member>
+        <member name="T:Kilsten.WearOS.TextViewExt">
+            <summary>
+            Extension methods for <see cref="T:Android.Widget.TextView"/>.
+            </summary>
+        </member>
+        <member name="M:Kilsten.WearOS.TextViewExt.SetTextIfSpecified(Android.Widget.TextView,System.Int32,System.String)">
+            <summary>
+            Sets the text from a string resource if one is specified, otherwise from a string if one is specified.
+            </summary>
+            <param name="self">Text view</param>
+            <param name="stringResId">String resource ID, or 0 for none</param>
+            <param name="text">Text, or null for none</param>
+        </member>
+        <member name="T:Kilsten.WearOS.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

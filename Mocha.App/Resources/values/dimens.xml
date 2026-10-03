@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Button sizes -->
+	<dimen name="buttonSizeStd">48dp</dimen>
+
+	<!-- Lists and headings -->
+	<dimen name="listHeaderTextSize">17dp</dimen>
+	<dimen name="listHeaderTopPadding">12dp</dimen>
+	<dimen name="listHeaderBottomPadding">12dp</dimen>
+	<dimen name="listBottomPadding">32dp</dimen>
+
+	<!-- General margins-->
+	<dimen name="marginSizeLarge2">32dp</dimen>
+	<dimen name="marginSizeLarge">16dp</dimen>
+	<dimen name="marginSizeMedium">8dp</dimen>
+	<dimen name="marginSizeSmall">4dp</dimen>
+	<dimen name="marginSizeSmall2">2dp</dimen>
+
+	<!-- -->
+	<dimen name="rippleHorizTextPadding">3dp</dimen>
+	<dimen name="rippleVertTextPadding">1dp</dimen>
+	<dimen name="rippleShapeRadius">12dp</dimen>
+
+</resources>

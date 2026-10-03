@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0.0" package="uk.andyjohnson.Mocha">
+	<uses-feature android:name="android.hardware.type.watch" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+	<!-- Granted at install on SDK 33 and above, for alarm and timer apps. SCHEDULE_EXACT_ALARM remains the fallback. -->
+	<uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+	<!-- For AlarmService to run as a foreground service of type systemExempted. -->
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
+	<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/appName" android:supportsRtl="true" android:theme="@style/Theme.App.Starting">
+		<uses-library android:name="com.google.android.wearable" android:required="true" />
+		<!-- Added manually to declare AndroidX ConfirmationActivity -->
+		<activity android:name="androidx.wear.activity.ConfirmationActivity" />
+	</application>
+</manifest>

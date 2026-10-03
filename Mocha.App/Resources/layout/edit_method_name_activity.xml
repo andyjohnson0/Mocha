@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundOpaque">
+
+    <EditText
+        android:id="@+id/methodNameEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:maxLength="20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/methodNameEdt">
+        <ImageButton
+            android:id="@+id/okBtn"
+            android:layout_width="@dimen/buttonSizeStd"
+            android:layout_height="@dimen/buttonSizeStd"
+            android:src="@drawable/ic_done"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="@color/colorAccent"
+            android:scaleType="center"
+            android:contentDescription="@string/done"
+            android:tooltipText="@string/done"/>
+        <ImageButton
+            android:id="@+id/voiceBtn"
+            android:layout_width="@dimen/buttonSizeStd"
+            android:layout_height="@dimen/buttonSizeStd"
+            android:src="@drawable/ic_keyboard_voice"
+            android:background="@drawable/button_round_states"
+            android:scaleType="center"
+            android:contentDescription="@string/useVoice"
+            android:tooltipText="@string/useVoice"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

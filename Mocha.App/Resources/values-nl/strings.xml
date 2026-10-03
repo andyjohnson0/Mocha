@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- nl / Dutch -->
+
+<resources>
+	
+    <string name="appName">Mokka</string>
+	<string name="appVersion">Versie %1$s</string>
+	<string name="appCopyright">Copyright © %1$s</string>
+	
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Koffie tas</string>
+	<string name="dripSystem">Druppelsysteem</string>
+	<string name="espresso">Espresso</string>
+	<string name="frenchPress">Cafetière</string>
+	<string name="percolator">Percolator</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Starten/stoppen</string>
+	<string name="increaseTime">Verhoog de tijd</string>
+	<string name="decreaseTime">Tijd verkorten</string>
+	<string name="useVoice">Gebruik stem</string>
+	<string name="useKeyboard">Gebruik toetsenbord</string>
+	<string name="add">Toevoegen</string>
+	<string name="edit">Bewerking</string>
+	<string name="delete">Verwijderen</string>
+	<string name="more">Meer</string>
+	<string name="done">Klaar</string>
+	<string name="information">Over</string>
+	<string name="settings">Instellingen</string>
+	<string name="alarmSound">Alarmgeluid</string>
+	<string name="alarmVibrate">Trillen</string>
+	<string name="notificationSettings">Meldingen</string>
+	<string name="notificationSettingsDescription">Meldingsinstellingen</string>
+	<string name="aboutThisApp">Over deze app</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Mijn koffie</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">De koffie staat klaar!</string>
+	<string name="coffeeBrewingMsg">Koffie is aan het zetten</string>
+	<string name="voiceInputRecognitionFailedMsg">Spraak niet herkend</string>
+	<string name="methodNameInUseMsg">Naam is al in gebruik</string>
+	<string name="methodNameRequiredMsg">Naam vereist</string>
+	<string name="deletedMsg">Verwijderd</string>
+	<string name="continueOnPhoneMsg">Doorgaan op telefoon</string>
+	<string name="openSettingsErrorMsg">Kan instellingen niet openen</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Spraakinvoer</string>
+	<string name="recordAudioPermissionRequestMsg">Wilt u deze app toestaan ​​spraakinvoer te gebruiken?</string>
+	<string name="postNotificationsPermissionPrompt">Meldingen</string>
+	<string name="postNotificationsPermissionRequestMsg">Deze app toestaan ​​om je meldingen te sturen? Dit is vereist zodat je weet wanneer je koffie klaar is.</string>
+	<string name="postNotificationsPermissionExplainMsg">Deze app moet je meldingen kunnen sturen, zodat je weet wanneer je koffie klaar is.</string>
+	<string name="postNotificationsPermissionEnableMsg">Toestemming om u meldingen te sturen is vereist. Inschakelen in de app-instellingen?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Alarmen</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Deze app toestaan ​​om alarmen in te stellen? Dit is vereist zodat u weet wanneer uw koffie klaar is.</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Koffie zetten</string>
+	<string name="continuingActivityChannelDescription">Wordt getoond wanneer de koffie aan het zetten is</string>
+	<string name="alarmNotificationChannelName">Koffie klaar</string>
+	<string name="alarmNotificationChannelDescription">Wordt getoond wanneer de koffie klaar is</string>
+	
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- pl / Polish -->
+
+<resources>
+
+	<string name="appName">Mokka</string>
+	<string name="appVersion">Wersja %1$s</string>
+	<string name="appCopyright">Prawo autorskie © %1$s</string>
+
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Torba na kawę</string>
+	<string name="dripSystem">System kroplowy</string>
+	<string name="espresso">Espresso</string>
+	<string name="frenchPress">Kawiarnia</string>
+	<string name="percolator">Perkolator</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Uruchom/zatrzymaj</string>
+	<string name="increaseTime">Zwiększ czas</string>
+	<string name="decreaseTime">Zmniejsz czas</string>
+	<string name="useVoice">Użyj głosu</string>
+	<string name="useKeyboard">Użyj klawiatury</string>
+	<string name="add">Dodatkowy</string>
+	<string name="edit">Edytować</string>
+	<string name="delete">Usuwać</string>
+	<string name="more">Informacja</string>
+	<string name="done">Zakończony</string>
+	<string name="information">Informacja</string>
+	<string name="settings">Ustawienia</string>
+	<string name="alarmSound">Alarm sound</string>
+	<string name="alarmVibrate">Wibrować</string>
+	<string name="notificationSettings">Powiadomienia</string>
+	<string name="notificationSettingsDescription">Ustawienia powiadomień</string>
+	<string name="aboutThisApp">O tej aplikacji</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Moja kawa</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Kawa jest gotowa!</string>
+	<string name="coffeeBrewingMsg">Kawa się parzy</string>
+	<string name="voiceInputRecognitionFailedMsg">Nie rozpoznano mowy</string>
+	<string name="methodNameInUseMsg">Nazwa jest już używana</string>
+	<string name="methodNameRequiredMsg">Nazwa jest wymagana</string>
+	<string name="deletedMsg">Usunięte</string>
+	<string name="continueOnPhoneMsg">Kontynuuj na telefonie</string>
+	<string name="openSettingsErrorMsg">Nie można otworzyć ustawień</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Wprowadzanie mowy</string>
+	<string name="recordAudioPermissionRequestMsg">Zezwolić tej aplikacji na wprowadzanie mowy?</string>
+	<string name="postNotificationsPermissionPrompt">Powiadomienia</string>
+	<string name="postNotificationsPermissionRequestMsg">Zezwolić tej aplikacji na wysyłanie powiadomień? Jest to wymagane, abyś wiedział, kiedy kawa jest gotowa.</string>
+	<string name="postNotificationsPermissionExplainMsg">Ta aplikacja musi mieć możliwość wysyłania powiadomień, dzięki którym będziesz wiedział, kiedy Twoja kawa będzie gotowa.</string>
+	<string name="postNotificationsPermissionEnableMsg">Wymagane jest pozwolenie na wysyłanie powiadomień. Włączyć je w ustawieniach aplikacji?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Alarmy</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Zezwolić tej aplikacji na ustawianie alarmów? Jest to wymagane, abyś wiedział, kiedy kawa jest gotowa.</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Parzenie kawy</string>
+	<string name="continuingActivityChannelDescription">Wyświetlany podczas parzenia kawy</string>
+	<string name="alarmNotificationChannelName">Kawa gotowa</string>
+	<string name="alarmNotificationChannelDescription">Wyświetlany, gdy kawa jest gotowa</string>
+	
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--pt-rBR (Barzilian Portugese) -->
+
+<resources>
+
+	<string name="appName">Mocha</string>
+	
+	<!-- Coffee methods -->
+	<string name="dripSystem">Sistema de gotejamento</string>
+
+	<!-- Buttons etc -->
+	<string name="delete">Excluir</string>
+	<string name="done">Acabado</string>
+
+	<!-- Labels -->
+	<string name="newMethodName">Meu café</string>
+	
+	<!-- Messages-->
+	<string name="coffeeBrewingMsg">O café está fervendo</string>
+	<string name="openSettingsErrorMsg">Não é possível abrir as configurações</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionRequestMsg">Permitir que este app use entrada de voz?</string>
+	<string name="postNotificationsPermissionRequestMsg">Permitir que este app envie notificações para você? Isso é necessário para que você saiba quando o café está pronto.</string>
+	<string name="postNotificationsPermissionExplainMsg">Este aplicativo precisa ser capaz de enviar notificações para que você saiba quando seu café estiver pronto.</string>
+	<string name="postNotificationsPermissionEnableMsg">É necessária permissão para enviar notificações. Habilite-a nas configurações do aplicativo?</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">Permitir que este app defina alarmes? Isso é necessário para que você saiba quando o café está pronto.</string>
+	
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelDescription">Mostrado quando o café está sendo preparado</string>
+	<string name="alarmNotificationChannelDescription">Mostrado quando o café está pronto</string>
+	
+</resources>

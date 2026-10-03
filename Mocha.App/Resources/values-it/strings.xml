@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- it / Italian -->
+
+<resources>
+
+	<string name="appName">Moka</string>
+	<string name="appVersion">Versione %1$s</string>
+	<string name="appCopyright">Diritto d\'autore © %1$s</string>
+
+	<!-- Coffee methods -->
+	<string name="aeropress">AeroPress\u00AE</string>
+	<string name="coffeeBag">Sacchetto di caffè</string>
+	<string name="dripSystem">Sistema di erogazione</string>
+	<string name="espresso">Caffè espresso</string>
+	<string name="frenchPress">Caffettiera</string>
+	<string name="percolator">Percolatore</string>
+
+	<!-- Buttons etc -->
+	<string name="startStop">Avviare/arrestare</string>
+	<string name="increaseTime">Aumentare il tempo</string>
+	<string name="decreaseTime">Diminuire il tempo</string>
+	<string name="useVoice">Usa la voce</string>
+	<string name="useKeyboard">Usa la tastiera</string>
+	<string name="add">Aggiungere</string>
+	<string name="edit">Modificare</string>
+	<string name="delete">Eliminare</string>
+	<string name="more">Di più</string>
+	<string name="done">Finito</string>
+	<string name="information">Informazione</string>
+	<string name="settings">Impostazioni</string>
+	<string name="alarmSound">Suono dell\'allarme</string>
+	<string name="alarmVibrate">Vibrare</string>
+	<string name="notificationSettings">Notifiche</string>
+	<string name="notificationSettingsDescription">Impostazioni delle notifiche</string>
+	<string name="aboutThisApp">Informazioni su questa app</string>
+	
+	<!-- Labels -->
+	<string name="newMethodName">Il mio caffè</string>
+	
+	<!-- Messages-->
+	<string name="coffeeReadyMsg">Il caffè è pronto!</string>
+	<string name="coffeeBrewingMsg">Il caffè sta fermentando</string>
+	<string name="voiceInputRecognitionFailedMsg">Discorso non riconosciuto</string>
+	<string name="methodNameInUseMsg">Nome già in uso</string>
+	<string name="methodNameRequiredMsg">Nome obbligatorio</string>
+	<string name="deletedMsg">Cancellato</string>
+	<string name="continueOnPhoneMsg">Continua al telefono</string>
+	<string name="openSettingsErrorMsg">Impossibile aprire le impostazioni</string>
+
+	<!-- Permissions-->
+	<string name="recordAudioPermissionPrompt">Input vocale</string>
+	<string name="recordAudioPermissionRequestMsg">Consentire a questa app di utilizzare l\'input vocale?</string>
+	<string name="postNotificationsPermissionPrompt">Notifiche</string>
+	<string name="postNotificationsPermissionRequestMsg">
+		Consentire a questa app di inviarti notifiche? Ciò è necessario per sapere quando il caffè è pronto.
+	</string>
+	<string name="postNotificationsPermissionExplainMsg">Questa app deve essere in grado di inviarti notifiche per farti sapere quando il tuo caffè è pronto.</string>
+	<string name="postNotificationsPermissionEnableMsg">È richiesta l\'autorizzazione per inviarti notifiche. Abilitarla nelle impostazioni dell\'app?</string>
+	<string name="postScheduleExactAlarmsPermissionPrompt">Allarmi</string>
+	<string name="postScheduleExactAlarmsPermissionRequestMsg">
+		Consentire a questa app di impostare sveglie? Ciò è necessario per sapere quando il caffè è pronto.
+	</string>
+
+	<!-- Notification channels -->
+	<string name="continuingActivityChannelName">Preparazione del caffè</string>
+	<string name="continuingActivityChannelDescription">Viene visualizzato quando il caffè è in infusione</string>
+	<string name="alarmNotificationChannelName">Caffè pronto</string>
+	<string name="alarmNotificationChannelDescription">Viene visualizzato quando il caffè è pronto</string>
+	
+</resources>
